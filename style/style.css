@@ -1,0 +1,51 @@
+/*@font-face{font-family:'FontAwesome';src:url('https://powerdms.com/content/version_1466627586058/untranslated/lib/font-awesome/fonts/fontawesome-webfont.eot?v=4.3.0');src:url('https://powerdms.com/content/version_1466627586058/untranslated/lib/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/font-awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'PowerDMS';src:url('https://powerdms.com/content/version_1466627586058/untranslated/lib/powerdms-font/fonts/PowerDMS.eot?-9gmphn');src:url('https://powerdms.com/content/version_1466627586058/untranslated/lib/powerdms-font/fonts/PowerDMS.eot?#iefix-9gmphn') format('embedded-opentype'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/powerdms-font/fonts/PowerDMS.ttf?-9gmphn') format('truetype'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/powerdms-font/fonts/PowerDMS.woff?-9gmphn') format('woff'),url('https://powerdms.com/content/version_1466627586058/untranslated/lib/powerdms-font/fonts/PowerDMS.svg?-9gmphn#PowerDMS') format('svg');font-weight:normal;font-style:normal}*/
+
+.tabBody .grouping {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.tabBody:hover .grouping {
+  opacity: .3;
+
+}
+.tabBody:hover .grouping:hover {
+  opacity: 1;
+}
+div.grouping {
+  padding: 4px 8px 20px;
+  clear: both;
+  border: 3px solid transparent;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+div.grouping:hover {
+  box-shadow: 0px 0px 12px -4px rgba(0,0,0,.25);
+}
+
+div.grouping > div {
+  margin-right: 20px;
+  min-width: 280px;
+}
+
+div.grouping h1 {
+  margin: 0px 0 14px;
+}
+
+div.grouping code {
+  color: #25a0da;
+}
+
+.tabs .AspNet-Menu-Horizontal {
+  min-width: 100%;
+  margin: -7px 0 8px;
+}
+.tabs.tabs2 .AspNet-Menu-Horizontal .AspNet-Menu .AspNet-Menu-Leaf,
+.tabs .AspNet-Menu-Horizontal .AspNet-Menu .AspNet-Menu-Leaf.AspNet-Menu-Selected .AspNet-Menu-Link {
+    font-size: 12px;
+    background: transparent;
+}

@@ -1,0 +1,48 @@
+  <div class="tab-header-outer">
+        <div class="tab-header">
+
+            <div class="h_icons ellipse">
+                <span class="fa fa-flask"><i></i></span>
+                <span>Buttons</span>
+            </div>
+        </div>
+    </div>
+    <div class="tabBody">
+
+      <div ng-repeat="section in getProperties(buttonData)">
+        <h1 class="section-header-font">{{section}}</h1>
+
+        <div class="grouping" ng-repeat="component in getProperties(buttonData[section])">
+          <div>
+            <h1 class="side-header-font">{{component}}</h1>
+
+            <div ng-bind-html="trustAsHtml(buttonData[section][component].code)">
+            </div>
+          </div>
+
+          <div>
+            <div class="tabs tabs2">
+              <div class="AspNet-Menu-Horizontal">
+
+                <ul class="AspNet-Menu">
+                  <li class="AspNet-Menu-Leaf" ng-class="{'AspNet-Menu-Selected': !buttonData[section][component].showCode}">
+                    <a ng-click="buttonData[section][component].showCode = false" class="AspNet-Menu-Link">Details</a>
+                  </li>
+                  <li class="AspNet-Menu-Leaf" ng-class="{'AspNet-Menu-Selected': buttonData[section][component].showCode}">
+                     <a ng-click="buttonData[section][component].showCode = true" class="AspNet-Menu-Link">Code Example</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            <textarea ng-show="buttonData[section][component].showCode" ng-model="buttonData[section][component].code" rows="3" cols="80"></textarea>
+            <div ng-hide="buttonData[section][component].showCode">
+
+              <div ng-repeat="detail in getProperties(buttonData[section][component])">
+                <strong>{{detail}}:</strong> <span ng-bind-html="buttonData[section][component][detail]"></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
