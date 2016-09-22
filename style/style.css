@@ -6,13 +6,6 @@
   transition: opacity .3s ease-in-out;
 }
 
-.tabBody:hover .grouping {
-  opacity: .3;
-
-}
-.tabBody:hover .grouping:hover {
-  opacity: 1;
-}
 div.grouping {
   padding: 4px 8px 20px;
   clear: both;
@@ -38,6 +31,11 @@ div.grouping h1 {
 
 div.grouping code {
   color: #25a0da;
+}
+
+textarea.code {
+    font-family: monospace;
+    padding: 8px;
 }
 
 .tabs .AspNet-Menu-Horizontal {

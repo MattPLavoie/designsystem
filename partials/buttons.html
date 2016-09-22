@@ -35,7 +35,7 @@
 
               </div>
             </div>
-            <textarea ng-show="buttonData[section][component].showCode" ng-model="buttonData[section][component].code" rows="3" cols="80"></textarea>
+            <textarea ng-show="buttonData[section][component].showCode" ng-model="buttonData[section][component].code" class="code" rows="3" cols="80"></textarea>
             <div ng-hide="buttonData[section][component].showCode">
 
               <div ng-repeat="detail in getProperties(buttonData[section][component])">
